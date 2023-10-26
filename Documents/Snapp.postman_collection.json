@@ -1,0 +1,208 @@
+{
+	"info": {
+		"_postman_id": "0bc2a21e-35af-4705-94dd-ba18b6ce9cb7",
+		"name": "Snapp",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "25842103",
+		"_collection_link": "https://grey-trinity-511125.postman.co/workspace/New-Team-Workspace~c5aed802-cb7d-45b1-8eac-a20f376e3a2b/collection/25842103-0bc2a21e-35af-4705-94dd-ba18b6ce9cb7?action=share&source=collection_link&creator=25842103"
+	},
+	"item": [
+		{
+			"name": "signup",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"username\":\"tinaaa\",\n    \"password\":\"tinaaa\",\n    \"email\":\"aaaaqa\",\n    \"name\":\"aaaaa\",\n    \"role\":\"aaaa\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "localhost:8080/api/auth/signup"
+			},
+			"response": []
+		},
+		{
+			"name": "signin",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"username\":\"tinaaa\",\n    \"password\":\"tinaaa\",\n    \"email\":\"aaaaqa\",\n    \"name\":\"aaaaa\",\n    \"role\":\"aaaa\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "localhost:8080/api/auth/signup"
+			},
+			"response": []
+		},
+		{
+			"name": "auth",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/data/test?Authorization=eyJhbGciOiJIUzUxMiJ9.eyJuYW1lIjoiYWFhYWEiLCJyb2xlIjoiYWFhYSIsImVtYWlsIjoiYWFhYXFhIiwidXNlcm5hbWUiOiJ0aW5hYWEiLCJzdWIiOiJ0aW5hYWEiLCJpYXQiOjE2OTgxNzI1NTUsImV4cCI6MTY5OTE3MjU1NX0.AFo3BKpMdmSebtZIPvywBAojaxEEWgcVfe-Bk2P6JbFrdCiMuS4btugUFsovdQhw3zkYH6OlF6o6eXRkmp9dYQ",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"data",
+						"test"
+					],
+					"query": [
+						{
+							"key": "Authorization",
+							"value": "eyJhbGciOiJIUzUxMiJ9.eyJuYW1lIjoiYWFhYWEiLCJyb2xlIjoiYWFhYSIsImVtYWlsIjoiYWFhYXFhIiwidXNlcm5hbWUiOiJ0aW5hYWEiLCJzdWIiOiJ0aW5hYWEiLCJpYXQiOjE2OTgxNzI1NTUsImV4cCI6MTY5OTE3MjU1NX0.AFo3BKpMdmSebtZIPvywBAojaxEEWgcVfe-Bk2P6JbFrdCiMuS4btugUFsovdQhw3zkYH6OlF6o6eXRkmp9dYQ"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "createReview",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"comment\": \"good\",\n    \"rate\": 5,\n    \"deliveryId\": 1,\n    \"customerId\": 2,\n    \"bikerId\": 12\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/feedback/?Authorization=eyJhbGciOiJIUzUxMiJ9.eyJuYW1lIjoiYWFhYWEiLCJyb2xlIjoiYWFhYSIsImVtYWlsIjoiYWFhYXFhIiwidXNlcm5hbWUiOiJ0aW5hYWEiLCJzdWIiOiJ0aW5hYWEiLCJpYXQiOjE2OTgxODAyNzgsImV4cCI6MTY5OTE4MDI3OH0.aB-e7u0IZpsCLYIvcRJPSgCtT1I4ATbrzrxr5H18JUwSChgtRSVqyFljFgf5BQK0pp3KNbvVohdHiOA6SiQmkQ",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"feedback",
+						""
+					],
+					"query": [
+						{
+							"key": "Authorization",
+							"value": "eyJhbGciOiJIUzUxMiJ9.eyJuYW1lIjoiYWFhYWEiLCJyb2xlIjoiYWFhYSIsImVtYWlsIjoiYWFhYXFhIiwidXNlcm5hbWUiOiJ0aW5hYWEiLCJzdWIiOiJ0aW5hYWEiLCJpYXQiOjE2OTgxODAyNzgsImV4cCI6MTY5OTE4MDI3OH0.aB-e7u0IZpsCLYIvcRJPSgCtT1I4ATbrzrxr5H18JUwSChgtRSVqyFljFgf5BQK0pp3KNbvVohdHiOA6SiQmkQ"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getAllFeedbacksSortByDeliveryDate",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/feedback/?Authorization=eyJhbGciOiJIUzUxMiJ9.eyJuYW1lIjoiYSIsInJvbGUiOiJhYWFhIiwiZW1haWwiOiJhYSIsInVzZXJuYW1lIjoidGlubiIsInN1YiI6InRpbm4iLCJpYXQiOjE2OTgyMzU0MjQsImV4cCI6MTY5OTIzNTQyNH0.zFhMKSoMrGZNd-q398Htrzvk_Gwb_As_9DTORSnEP2wsywtjj07YFJhNYjVCNadS7x8s64891HKNypIWAy895w",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"feedback",
+						""
+					],
+					"query": [
+						{
+							"key": "Authorization",
+							"value": "eyJhbGciOiJIUzUxMiJ9.eyJuYW1lIjoiYSIsInJvbGUiOiJhYWFhIiwiZW1haWwiOiJhYSIsInVzZXJuYW1lIjoidGlubiIsInN1YiI6InRpbm4iLCJpYXQiOjE2OTgyMzU0MjQsImV4cCI6MTY5OTIzNTQyNH0.zFhMKSoMrGZNd-q398Htrzvk_Gwb_As_9DTORSnEP2wsywtjj07YFJhNYjVCNadS7x8s64891HKNypIWAy895w"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getReviewsByBikerId",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/feedback/1?Authorization=eyJhbGciOiJIUzUxMiJ9.eyJuYW1lIjoiYWFhYWEiLCJyb2xlIjoiYWFhYSIsImVtYWlsIjoiYWFhYXFhIiwidXNlcm5hbWUiOiJ0aW5hYWEiLCJzdWIiOiJ0aW5hYWEiLCJpYXQiOjE2OTgxODAyNzgsImV4cCI6MTY5OTE4MDI3OH0.aB-e7u0IZpsCLYIvcRJPSgCtT1I4ATbrzrxr5H18JUwSChgtRSVqyFljFgf5BQK0pp3KNbvVohdHiOA6SiQmkQ",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"feedback",
+						"1"
+					],
+					"query": [
+						{
+							"key": "Authorization",
+							"value": "eyJhbGciOiJIUzUxMiJ9.eyJuYW1lIjoiYWFhYWEiLCJyb2xlIjoiYWFhYSIsImVtYWlsIjoiYWFhYXFhIiwidXNlcm5hbWUiOiJ0aW5hYWEiLCJzdWIiOiJ0aW5hYWEiLCJpYXQiOjE2OTgxODAyNzgsImV4cCI6MTY5OTE4MDI3OH0.aB-e7u0IZpsCLYIvcRJPSgCtT1I4ATbrzrxr5H18JUwSChgtRSVqyFljFgf5BQK0pp3KNbvVohdHiOA6SiQmkQ"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ratings",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/feedback/feedbacks/?Authorization=eyJhbGciOiJIUzUxMiJ9.eyJuYW1lIjoiYSIsInJvbGUiOiJhYWFhIiwiZW1haWwiOiJhYSIsInVzZXJuYW1lIjoidGlubiIsInN1YiI6InRpbm4iLCJpYXQiOjE2OTgyMzU0MjQsImV4cCI6MTY5OTIzNTQyNH0.zFhMKSoMrGZNd-q398Htrzvk_Gwb_As_9DTORSnEP2wsywtjj07YFJhNYjVCNadS7x8s64891HKNypIWAy895w",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"feedback",
+						"feedbacks",
+						""
+					],
+					"query": [
+						{
+							"key": "Authorization",
+							"value": "eyJhbGciOiJIUzUxMiJ9.eyJuYW1lIjoiYSIsInJvbGUiOiJhYWFhIiwiZW1haWwiOiJhYSIsInVzZXJuYW1lIjoidGlubiIsInN1YiI6InRpbm4iLCJpYXQiOjE2OTgyMzU0MjQsImV4cCI6MTY5OTIzNTQyNH0.zFhMKSoMrGZNd-q398Htrzvk_Gwb_As_9DTORSnEP2wsywtjj07YFJhNYjVCNadS7x8s64891HKNypIWAy895w"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "overallByBikerId",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/feedback/1/overall?Authorization=eyJhbGciOiJIUzUxMiJ9.eyJuYW1lIjoiYWFhYWEiLCJyb2xlIjoiYWFhYSIsImVtYWlsIjoiYWFhYXFhIiwidXNlcm5hbWUiOiJ0aW5hYWEiLCJzdWIiOiJ0aW5hYWEiLCJpYXQiOjE2OTgxODAyNzgsImV4cCI6MTY5OTE4MDI3OH0.aB-e7u0IZpsCLYIvcRJPSgCtT1I4ATbrzrxr5H18JUwSChgtRSVqyFljFgf5BQK0pp3KNbvVohdHiOA6SiQmkQ",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"feedback",
+						"1",
+						"overall"
+					],
+					"query": [
+						{
+							"key": "Authorization",
+							"value": "eyJhbGciOiJIUzUxMiJ9.eyJuYW1lIjoiYWFhYWEiLCJyb2xlIjoiYWFhYSIsImVtYWlsIjoiYWFhYXFhIiwidXNlcm5hbWUiOiJ0aW5hYWEiLCJzdWIiOiJ0aW5hYWEiLCJpYXQiOjE2OTgxODAyNzgsImV4cCI6MTY5OTE4MDI3OH0.aB-e7u0IZpsCLYIvcRJPSgCtT1I4ATbrzrxr5H18JUwSChgtRSVqyFljFgf5BQK0pp3KNbvVohdHiOA6SiQmkQ"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

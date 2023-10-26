@@ -1,0 +1,5 @@
+When user create a feedback, the reviewNumbers and reviewSum  in biker table will be updated.When the biker wants to calculate his over all rate, the reviewNumbers and reviewSum fetch from biker table and calculate the average rating .
+In this scenario 3 cases are handled : 
+1. Handle case where there are no reviews available for the biker.
+2. Handle case where biker is not found.
+3.Handled the cuncurrency case for database.
